@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #1e3a5f;
+  --color-primary-dark: #1e40af;
+  --color-accent: #3b82f6;
+  --color-bg-light: #f0f4f8;
+  --color-text-main: #1e293b;
+  --color-text-sub: #64748b;
+  --color-border-main: #e2e8f0;
+}
+
+:root {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
